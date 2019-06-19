@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <div class="row">
+        <div class="col">
+            <h1 class="mt-4">JavaScript Assignment - Problem 03</h1>
+            <h2 class="text-muted">Adding</h2>
+            <p class="lead">Create a JavaScript script that adds all numbers (up to inputted value) divisible by 3 or 5 to the value entered.</p>
+        </div>
+    </div>
+
+<!-- Including JS code directly in HTML page -->
+
+<script language="JavaScript">
+
+   let number = 0;
+   let total = 0;
+   number = parseInt(prompt("Please enter a value between 0 and 1000: "));
+
+   if(isNaN(number))
+   {
+       console.log("Please insert a number")
+   }
+
+   for (let count = 3; count <= number; count++)
+   {
+       if((number == "") ||  (total == ""))
+       {
+           console.log("Please enter a value");
+       }
+       if(count % 3 === 0 || count % 5 === 0)
+       {
+           total += count;
+           console.log(total);
+       }
+   }
+
+</script>
+</body>
+</html>
+
+
+
